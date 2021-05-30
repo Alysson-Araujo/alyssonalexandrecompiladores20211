@@ -7,4 +7,10 @@
 https://github.com/Alysson-Araujo/alyssonalexandrecompiladores20211
 
 ### Questão 02
-![Autômato](questão 02 automato.png)
+![Autômato](questão_02_automato.png)
+
+
+```
+Correção: 1,0 pontos
+OK!!!
+```
