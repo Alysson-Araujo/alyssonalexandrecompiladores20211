@@ -52,7 +52,20 @@ Detalhes do Autômato:
 
 ![alt](tabelaq2.png)
 
+```
+Correção: 0,2 pontos.
 
+No conteúdo ministrado, o símbolo ^ tem outro significado. Ele é usado dentro do colchetes para indicar a negação de um conjunto.
+Para descrever uma expressão regular para números pares, em compiladores, não precisamos nos preocupar com o início ou fim da linha. 
+Por exemplo,
+
+int a = 12;
+
+Se eu quisesse capturar o número par como marca, o uso de ^ e $ iriam dificultar, visto que a linha termina com ; e começa com i. 
+Sinceramente, não sei onde viu a necessidade de usar esses símbolos, pois não os mencionei em aula. 
+Aí piora quando você informa o autômato, afinal como ele trataria ^ e $? Acaba que o autômato está correto, 
+mas não corresponde à cadeia que você forneceu.
+```
 
 
 
@@ -77,6 +90,11 @@ Detalhes do Autômato:
 <br><br><br>
 #
 <br><br><br>
+
+```
+Correção: 0,5 
+Tudo Ok!
+```
 
 
 ### Questão 03 - 0,5 Pontos
@@ -151,6 +169,9 @@ while estado = 1, 2, 3 ou 4 do
     end case;
 end while;
 if Automatos Finitos estado = 5 then aceitacao else erro; 
+```
 
-
+```
+Correção: 0,5
+Tudo Ok!
 ```
