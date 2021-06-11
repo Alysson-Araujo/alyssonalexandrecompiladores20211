@@ -1,6 +1,14 @@
 # Atividade03 da disciplina de Compiladores
 # Semestre 2021.1
 
+> Correção:
+> 
+> Questão 01: 1,0 Ponto.
+> 
+> Tudo OK. Algumas imprecisões, mas a explicação está no raciocínio correto, demonstra seu esforço.
+> 
+> Questão 02: 0,0 arquivo vazio.
+
 ## Aluno:     Alysson Alexandre de Oliveira Araújo
 ## Matrícula: 474084
 ## Professor: João Marcelo
