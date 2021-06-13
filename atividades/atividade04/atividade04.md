@@ -385,11 +385,17 @@ Resposta da 2.1:
 A derivação mais a esquerda resultou em (identificador número (identificador identificador identificador)), encaixando com a cadeia (a 23 (m x y)) na questão dos seus tipos. Logo a derivação foi um sucesso.
 
 
-Para concluir, a construção abaixo mostra uma árvore de análise sintática com uma derivação mais a direita da cadeia (a 23 (m x y)):
-
-
-
 ~~~~
+
+<br>
+<br>
+
+Resposta 2.2:
+
+<br>
+<br>
+
+Para concluir, a construção dessa árvore abaixo mostra uma árvore de análise sintática com uma derivação mais a direita da cadeia (a 23 (m x y)):
 
 ![alt](imagens/arvore022analise.png)
 
