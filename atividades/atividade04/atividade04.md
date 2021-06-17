@@ -1,6 +1,9 @@
 # Atividade04 da disciplina de Compiladores
 # Semestre 2021.1
 
+> Correção: 2,5 pontos
+> 
+> Tudo OK
 
 ## Aluno:     Alysson Alexandre de Oliveira Araújo
 ## Matrícula: 474084
