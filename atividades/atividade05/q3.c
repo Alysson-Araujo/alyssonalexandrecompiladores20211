@@ -6,21 +6,21 @@ lexp-seq -> lexp-seq lexp | lexp
 
 typedef enum
 {
-    Plus,
-    Minus,
-    Mult
+    Plus,  // Operador   +
+    Minus, // Operador   -
+    Mult   // Operador   *
 } OpKind;
 
 typedef enum
 {
-    OpK,
-    ConstK,
-    LexpSeqK
+    OpK,     // um OpKind
+    ConstK,  // um Número
+    LexpSeqK // um LexpSeqKind
 } LexpKind;
 
 typedef enum
 {
-    LexpK
+    LexpK // um LexpKind
 } LexpSeqKind;
 
 
