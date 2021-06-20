@@ -70,12 +70,15 @@ Resposta da 1.2:
 
 
 
-~~~~
+
 A Precedência e associatividade não são um problema para esta gramática, já que na estrutura da gramática, quando queremos inserir um novo operador op ele está presente entre parênteses na regra [lexp -> (op lexp-seq)], isso separa das outras operações, por exemplo a multiplicação nesta expressão (+ 2 (* 3 4)) tem ordem de precedência sendo a multiplicação a primeira operação a ocorrer, dessa forma as precedências estão organizadas entre parênteses. Na questão da associatividade dessa gramática se interliga com as precedências no sentido que ela trabalha com parênteses, assim aplicando uma organização de associatividade da gramática.
 
 Agora, vamos considerar a seguintes exemplos das expressões (+ 2 (* 3 4)) e (+ 2 1 4) e vamos fazer derivações nelas usando a a gramática dita no enunciado da questão. Como a linguagem LISP usa a ideia de leitura mais a esquerda, as derivações abaixo serão mais a esquerda.
 
-* Primeiro tenho que ressaltar que quando estou [lexp -> 2] ou outros dos números que aparece, estou me reperindo a regra [lexp -> número]. Como ele faz a transição para um número, eu já coloquei o número presente na derivação
+OBS: Primeiro tenho que ressaltar que quando estou [lexp -> 2] ou outros dos números que aparece, estou me reperindo a regra [lexp -> número]. Como ele faz a transição para um número, eu já coloquei o número presente na derivação.
+
+~~~~
+
 
 Derivação de (+ 2 (* 3 4)):
 Vamos começar o com lexp -> (op lexp-seq)
@@ -94,16 +97,15 @@ Vamos começar o com lexp -> (op lexp-seq)
 
 
 
+~~~~
+
     
-    Como estamos trabalhando com uma gramática que faz a representação de expressões aritméticas de inteiros simples em forma prefixa similar a linguagem LISP, o operador matemático deve está sempre a esquerda da expressão. Além disso, como temos um número após o operador, não podemos escolher outra regra, por exemplo no passo 3 onde usamos a regra [lexp-seq -> lexp-seq lexp] não podemos usar a regra [lexp-seq -> lexp] e ir direto para [lexp -> (op lexp-sep)], já que isso faria com que o número 2 ficasse ausente na derivação, logo a derivação da expressão ficaria errada e, concluindo, que só há apenas um caminho alternativa para fazer a derivação. 
+    
+Como estamos trabalhando com uma gramática que faz a representação de expressões aritméticas de inteiros simples em forma prefixa similar a linguagem LISP, o operador matemático deve está sempre a esquerda da expressão. Além disso, como temos um número após o operador, não podemos escolher outra regra, por exemplo no passo 3 onde usamos a regra [lexp-seq -> lexp-seq lexp] não podemos usar a regra [lexp-seq -> lexp] e ir direto para [lexp -> (op lexp-sep)], já que isso faria com que o número 2 ficasse ausente na derivação, logo a derivação da expressão ficaria errada e, concluindo, que só há apenas um caminho alternativa para fazer a derivação. 
 
 
 
-lexp -> número | (op lexp-seq)
-op -> +|-|*
-lexp-seq -> lexp-seq lexp | lexp
-
-
+~~~~
 Derivação de (+ 2 1 4):
 Vamos começar o com lexp -> (op lexp-seq)
 
@@ -118,12 +120,12 @@ Vamos começar o com lexp -> (op lexp-seq)
 7.       -> (+ 2 1 lexp)                         [lexp -> 1]
 8.       -> (+ 2 1 4)                            [lexp -> 4]
 
+
+~~~~
+
 Como estamos trabalhando com uma gramática que faz a representação de expressões aritméticas de inteiros simples em forma prefixa similar a linguagem LISP, o operador matemático deve está sempre a esquerda da expressão. Além disso, como temos três número após o operador, não podemos escolher outra regra, por exemplo no passo 3 ou 4 onde usamos a regra [lexp-seq -> lexp-seq lexp] não podemos usar a regra [lexp-seq -> lexp] e ir direto para [lexp -> (op lexp-sep)], já que isso faria com que o número 2 ou/e 1 ficasse ausente na derivação, fora que não existe outro operador a não ser o "+" na expressão, ou usar a regra [lexp-seq -> lexp] e ir para [lexp -> número], pois isso acarretaria na ausência de algum número presente na expressão. Logo a derivação da expressão ficaria errada e, concluindo, que só há apenas um caminho alternativa para fazer a derivação. 
 
 Dito isso podemos confirmar que a gramática não é ambígua.
-
-
-~~~~
 
 Resposta 1.3 está presente no **arquivo q3.c**, mas o código dela pode ser encontrado logo abaixo:
 
