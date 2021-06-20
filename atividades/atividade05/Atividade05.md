@@ -127,6 +127,10 @@ Como estamos trabalhando com uma gramática que faz a representação de express
 
 Dito isso podemos confirmar que a gramática não é ambígua.
 
+<br>
+<br>
+<br>
+
 Resposta 1.3 está presente no **arquivo q3.c**, mas o código dela pode ser encontrado logo abaixo:
 
 ```C
