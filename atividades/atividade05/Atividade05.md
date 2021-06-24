@@ -1,5 +1,11 @@
 # Atividade05 da disciplina de Compiladores
 # Semestre 2021.1
+> Correção: 3,0
+> 
+> Na última questão, de acordo com o enunciado, está imprecisa. Veja que a árvore abstrata não teria nós intermediários. O correto seria
+> representar os filhos como uma lista. Entretanto, na aula da sexta, os alunos pediram para deixar como a árvore de análise. Daí
+> irei considerar a nota cheia.
+
 
 
 ## Aluno:     Alysson Alexandre de Oliveira Araújo
