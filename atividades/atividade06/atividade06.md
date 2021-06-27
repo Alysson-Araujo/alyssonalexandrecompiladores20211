@@ -47,7 +47,7 @@ Escreva o pseudocódigo para analisar essa gramática de forma descendente recur
 
 Resposta:
 
-Eu iria reescrever a gramática para escrever o pseudocódigo, porém como não estou seguro para fazer isso, preferi não fazer isso para evitar um possível erro no pseudocódigo. Até porquê o senhor comentou que não era algo necessário. Estou aberto para receber comentários do senhor caso eu esteja errado.
+Eu iria reescrever a gramática para escrever o pseudocódigo, porém como não estou seguro para fazer isso, preferi não fazer isso para evitar um possível erro no pseudocódigo. Até porquê o senhor comentou que não era algo necessário. Estou aberto para receber comentários do senhor caso eu esteja certo ou errado.
 
 ```
 procedure declaração;
