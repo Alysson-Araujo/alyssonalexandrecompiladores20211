@@ -49,6 +49,12 @@ Resposta:
 
 Eu iria reescrever a gramática para escrever o pseudocódigo, porém como não estou seguro para fazer isso, preferi não fazer isso para evitar um possível erro no pseudocódigo. Até porquê o senhor comentou que não era algo necessário. Estou aberto para receber comentários do senhor caso eu esteja certo ou errado.
 
+> Correção: 0,5
+>
+> O problema é que no procedimento declaração, você considera atribuição-decl como uma marca. Mas é óbvio pela gramática que atribuição-decl não pode ser uma marca, visto
+> que aparece do lado esquerdo de uma regra. Daí sugiro uma revisão dos conceitos básicos de gramáticas livres de contexto.
+> A saída era ler adiante alguns símbolos para decidir qual caminho tomar, depois retornando os símbolos para a entrada permitindo aos outros procedimentos processarem.
+
 ```
 procedure declaração;
 begin
