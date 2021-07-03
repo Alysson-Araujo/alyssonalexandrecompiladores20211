@@ -47,8 +47,9 @@ Observação: abaixo a tabela, mas confiram no livro se realmente está igual.
 
 **Resposta da  3 + 4 * 5 - 6**
 
-![](expressao_aritmetica1_p1.png)
-![](expressao_aritmetica1_p2.png)
+![a](expressao_aritmetica1_p1.png)
+
+![a](expressao_aritmetica1_p2.png)
 
 
 
@@ -60,7 +61,8 @@ Observação: abaixo a tabela, mas confiram no livro se realmente está igual.
 
 **Resposta da  3 * (4 - 5 + 6)**
 
-![](expressao_aritmetica2_p1.png)
+![a](expressao_aritmetica2_p1.png)
+
 ![a](expressao_aritmetica2_p2.png)
 
 <br>
@@ -72,6 +74,9 @@ Observação: abaixo a tabela, mas confiram no livro se realmente está igual.
 **Resposta da  3 - (4 + 5 * 6)**
 
 ![a](expressao_aritmetica3_p1.png)
+
 ![a](expressao_aritmetica3_p2.png)
+
 ![a](expressao_aritmetica3_p3.png)
+
 ![a](expressao_aritmetica3_p4.png)
