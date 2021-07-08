@@ -1,6 +1,8 @@
 # Atividade07 da disciplina de Compiladores
 # Semestre 2021.1
-
+> Correção: 1,5
+> 
+> Tente fazer as tabelas em Markdown mesmo, fica mais fácil para você. 
 
 ## Aluno:     Alysson Alexandre de Oliveira Araújo
 ## Matrícula: 474084
