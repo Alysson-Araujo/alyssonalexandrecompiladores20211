@@ -21,8 +21,35 @@ L -> L,E | E
 1. Construa o DFA de itens LR(0) para essa gramática.
 2. Mostre a pilha de análise sintática e as ações de um analisador LR(0) para a cadeia de entrada ((a),a,(a,a)). Se você encontrar algum conflito, indique sua natureza para explicar porque a derivação não prossegue.
 
-> Não foi feita a 1.1
+**Reposta do 1.1**
 
+<br>
+<br>
+<br>
+
+A princípio vamos modificar essa gramática usando LR(0). Seguindo os conceitos de LR(0) vamos fazer produção de posições identificadas para adquirir a seguinte gramática:
+
+~~~~
+E -> .(L)
+E -> (.L)
+E -> (L.)
+E -> (L).
+E -> .a
+E -> a.
+L -> .L,E
+L -> L.,E
+L -> L,.E
+L -> L,E.
+L -> .E
+L -> E.
+~~~~
+
+<br>
+<br>
+
+Após isso, vamos fazer um automato NFA (Pedir para o professor explicar novamente a parte da NFA na questão das transições ε)
+
+![alt](NFA1_1.png)
 > O que fiz foi apenas a 1.2 -> pilha de análise sintática
 
 
