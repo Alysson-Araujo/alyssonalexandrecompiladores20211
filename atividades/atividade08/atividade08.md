@@ -1,6 +1,8 @@
 # Atividade08 da disciplina de Compiladores
 # Semestre 2021.1
-
+> Correção: 0,5
+> 
+> Revise a definição os conjuntos Primeiro e Sequência.
 
 ## Aluno:     Alysson Alexandre de Oliveira Araújo
 ## Matrícula: 474084
