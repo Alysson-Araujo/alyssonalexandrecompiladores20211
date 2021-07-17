@@ -162,7 +162,7 @@ L -> E.
   </tr>
   <tr>
     <td>12</td>
-    <td>$ 0 (2 L4 ,7 E8******* </td>
+    <td>$ 0 (2 L4 ,7 E8 </td>
     <td>,(a,a))$</td>
     <td>reduz L -> L,E</td>
   </tr>
