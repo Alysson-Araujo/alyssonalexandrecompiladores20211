@@ -35,16 +35,16 @@ Antes de construir a DFA, precisamos pegar a gramática mostrada no enunciado e 
 <br>
 
 ~~~~
-decl-sequência' -> .decl-sequência 0
-decl-sequência' -> decl-sequência. 1
-decl-sequência -> .decl-sequência; decl 2
-decl-sequência -> decl-sequência.; decl 3 
-decl-sequência -> decl-sequência;. decl 4
-decl-sequência -> decl-sequência; decl. 5
-decl-sequência -> .decl 6 
-decl-sequência -> decl. 7
-decl -> .s 8
-decl -> s. 9
+decl-sequência' -> .decl-sequência 
+decl-sequência' -> decl-sequência. 
+decl-sequência -> .decl-sequência; decl
+decl-sequência -> decl-sequência.; decl 
+decl-sequência -> decl-sequência;. decl 
+decl-sequência -> decl-sequência; decl. 
+decl-sequência -> .decl 
+decl-sequência -> decl. 
+decl -> .s 
+decl -> s. 
 ~~~~
 
 <br>
@@ -64,21 +64,19 @@ Agora que temos a gramática com LR(0), vamos fazer a construção da DFA:
 <br>
 <br>
 
+Os conjuntos de sequência para os não-terminais são:
+- **Sequência(decl-sequência')={$}** e 
 
-<table style="width:100%">
-  <tr>
-    <th>Estado</th>
-    <th>Entrada</th>
-    <th>ir para</th>
+- **Sequência(decl-sequência)={$,;}**
 
-  </tr>
-  <tr>
-    <th></th>
-    <th>n</th>
-    <th>+</th>
-    <th>$</th>
-    <th>E</th>
-  </tr>
-  
+A letra c indica uma ação de carregar e a letra r indica uma ação de redução.
 
-</table>
+Usamos a palavra "aceita" para (decl-sequência' -> decl-sequência) com entrada $.
+
+![tabela1](tabela_1_2.png)
+
+<br>
+<br>
+<br>
+
+**Resposta 1.3:**
