@@ -80,3 +80,118 @@ Usamos a palavra "aceita" para (decl-sequência' -> decl-sequência) com entrada
 <br>
 
 **Resposta 1.3:**
+
+
+<br>
+<br>
+<br>
+
+Usaremos a gramática abaixo para a construção da pilha de análise sintática e as ações para um analisador SLR(1) para a cadeia de entrada s;s;s.
+
+
+<br>
+<br>
+<br>
+
+
+~~~~
+decl-sequência' -> .decl-sequência 
+decl-sequência' -> decl-sequência. 
+decl-sequência -> .decl-sequência; decl
+decl-sequência -> decl-sequência.; decl 
+decl-sequência -> decl-sequência;. decl 
+decl-sequência -> decl-sequência; decl. 
+decl-sequência -> .decl 
+decl-sequência -> decl. 
+decl -> .s 
+decl -> s. 
+~~~~
+
+<br>
+<br>
+<br>
+
+Segue abaixo a tabela mostrando a pilha de análise sintática e as ações para um analisador SLR(1) para a cadeia de entrada s;s;s.
+
+<table style="width:100%">
+  <tr>
+    <th></th>
+    <th>Pilha de Análise Sintática</th>
+    <th>Entrada</th>
+    <th>Ação</th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>$ 0 </td>
+    <td>s;s;s$</td>
+    <td>carrega 1</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>$ 0 s1 </td>
+    <td>;s;s$</td>
+    <td>r(decl->s)</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>$ 0 decl3 </td>
+    <td>;s;s$</td>
+    <td>r(decl-sequência->decl)</td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>$ 0 decl-sequência2 </td>
+    <td>;s;s$</td>
+    <td>c4</td>
+  </tr><tr>
+    <td>5</td>
+    <td>$ 0 decl-sequência2 ;4</td>
+    <td>s;s$</td>
+    <td>c1</td>
+  </tr>
+  <tr>
+    <td>6</td>
+    <td>$ 0 decl-sequência2 ;4 s1</td>
+    <td>;s$</td>
+    <td>r(decl->s)</td>
+  </tr>
+  <tr>
+    <td>7</td>
+    <td>$ 0 decl-sequência2 ;4 decl5</td>
+    <td>;s$</td>
+    <td>r(decl-sequência -> decl-sequência; decl)</td>
+  </tr>
+  <tr>
+    <td>8</td>
+    <td>$ 0 decl-sequência2 </td>
+    <td>;s$</td>
+    <td>c4</td>
+  </tr>
+  <tr>
+    <td>9</td>
+    <td>$ 0 decl-sequência2 ;4</td>
+    <td>s$</td>
+    <td>c1</td>
+  </tr>
+  <tr>
+    <td>10</td>
+    <td>$ 0 decl-sequência2 ;4 s1</td>
+    <td>$</td>
+    <td>r(decl->s)</td>
+  </tr>
+  <tr>
+    <td>11</td>
+    <td>$ 0 decl-sequência2 ;4 decl5</td>
+    <td>$</td>
+    <td>r(decl-sequência -> decl-sequência; decl)</td>
+  </tr>
+   <tr>
+    <td>12</td>
+    <td>$ 0 decl-sequência2 </td>
+    <td>$</td>
+    <td>aceita</td>
+  </tr>
+
+  
+
+</table>
