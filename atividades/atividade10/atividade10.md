@@ -28,6 +28,12 @@ decl -> s
 
 4. Essa gramática é LR(0)? Se não for, identifique o conflito LR(0). Se for, construa a tabela de análise sintática LR(0), e explique como uma análise sintática pode diferir de uma análise SLR(1). Em outras palavras, explique como a análise SLR(1) pode funcionar para uma gramática mesmo que a LR(0) não funcione. Pode fornecer exemplos de gramáticas se desejar.
 
+<br>
+<br>
+<br>
+
+****
+
 **Resposta 1.1**
 
 Antes de construir a DFA, precisamos pegar a gramática mostrada no enunciado e aplicar o LR(0) que resulta na seguinte gramática:
@@ -58,6 +64,8 @@ Agora que temos a gramática com LR(0), vamos fazer a construção da DFA:
 <br>
 <br>
 
+****
+
 **Resposta 1.2**
 
 <br>
@@ -78,6 +86,8 @@ Usamos a palavra "aceita" para (decl-sequência' -> decl-sequência) com entrada
 <br>
 <br>
 <br>
+
+****
 
 **Resposta 1.3:**
 
@@ -192,6 +202,55 @@ Segue abaixo a tabela mostrando a pilha de análise sintática e as ações para
     <td>aceita</td>
   </tr>
 
-  
-
 </table>
+
+
+
+<br>
+<br>
+<br>
+<br>
+
+****
+
+<br>
+<br>
+
+
+Enunciado da 1.4: 
+
+<em> Essa gramática é LR(0)? Se não for, identifique o conflito LR(0). Se for, construa a tabela de análise sintática LR(0), e explique como uma análise sintática pode diferir de uma análise SLR(1). Em outras palavras, explique como a análise SLR(1) pode funcionar para uma gramática mesmo que a LR(0) não funcione. Pode fornecer exemplos de gramáticas se desejar.</em>
+
+
+**Resposta 1.4:**
+
+Não, essa gramática não é LR(0), pois os estados finais do autômato DFA construído da questão 1.1, onde no estado 2 dessa DFA temos item completo **decl-sequência' ->  decl-sequência** e com isso não devia ter nenhum item alé dele. Nesse caso, temos o outro item além do **decl-sequência' ->  decl-sequência** no estado 2, que é o **decl-sequência -> decl-sequência.; decl** e, além disso, temos a situação que esse item é de carregar, onde nele o **;** é um terminal, acaba ocorrendo uma ambiguidade em relação à execução das ações do (1) ou do (2).
+
+
+![exemplo](/exemplo_1_4.png)
+
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
