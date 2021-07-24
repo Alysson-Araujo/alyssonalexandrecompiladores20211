@@ -224,10 +224,12 @@ Enunciado da 1.4:
 
 **Resposta 1.4:**
 
-Não, essa gramática não é LR(0), pois os estados finais do autômato DFA construído da questão 1.1, onde no estado 2 dessa DFA temos item completo **decl-sequência' ->  decl-sequência** e com isso não devia ter nenhum item alé dele. Nesse caso, temos o outro item além do **decl-sequência' ->  decl-sequência** no estado 2, que é o **decl-sequência -> decl-sequência.; decl** e, além disso, temos a situação que esse item é de carregar, onde nele o **;** é um terminal, acaba ocorrendo uma ambiguidade em relação à execução das ações do (1) ou do (2).
-
+Não, essa gramática não é LR(0), pois os estados finais do autômato DFA construído da questão 1.1, onde no estado 2 dessa DFA temos item completo **decl-sequência' ->  decl-sequência** e com isso não devia ter nenhum item alé dele. Nesse caso, temos o outro item além do **decl-sequência' ->  decl-sequência** no estado 2, que é o **decl-sequência -> decl-sequência.; decl** e, além disso, temos a situação que esse item é de carregar, onde nele o **;** é um terminal, acaba ocorrendo uma ambiguidade em relação à execução das ações do (1) ou do (2). Essa situação se chama conflito carrega-reduz.
 
 ![exemplo](/exemplo_1_4.png)
+
+
+
 
 <br>
 <br>
