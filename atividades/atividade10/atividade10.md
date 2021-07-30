@@ -1,6 +1,9 @@
-# Atividade10 da disciplina de Compiladores
+# Atividade 10 da disciplina de Compiladores
 # Semestre 2021.1
 
+> Correção: 1,8
+> 
+> Poderia explicado, ou fornecido exemplos, do que a SLR(1) faria de diferente.
 
 ## Aluno:     Alysson Alexandre de Oliveira Araújo
 ## Matrícula: 474084
