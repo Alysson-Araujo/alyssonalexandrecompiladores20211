@@ -1,6 +1,9 @@
 # Atividade11 da disciplina de Compiladores
 # Semestre 2021.1
 
+> Correção: 2,0 pontos
+>
+> O DFA LALR(1) para a gramática de expressões deve ter 9 estados, você poderia ter condensando mais estados do "miolo" do autômato.
 
 ## Aluno:     Alysson Alexandre de Oliveira Araújo
 ## Matrícula: 474084
