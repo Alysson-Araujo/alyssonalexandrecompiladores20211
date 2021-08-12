@@ -1,6 +1,9 @@
-# Atividade11 da disciplina de Compiladores
+# Atividade 12 da disciplina de Compiladores
 # Semestre 2021.1
-
+> Correção: 1,0
+> 
+> Toda regra semântica é associada a uma regra gramatical. Mas do jeito que você colocou, não dá para percebe qual regra semântica está associada a qual regra
+> gramatical. Além do mais, as produção que geram épsilon deve criar no atributo valor o elemento neutro das operações.
 
 ## Aluno:     Alysson Alexandre de Oliveira Araújo
 ## Matrícula: 474084
