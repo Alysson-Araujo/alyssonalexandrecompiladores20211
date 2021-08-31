@@ -1,6 +1,9 @@
 # Atividade14 da disciplina de Compiladores
 # Semestre 2021.1
-
+> Correção: 1,2
+> 
+> Acho que a ideia está certa, mas você tem que ter cuidado pois na sua solução as regras semânticas refereciam símbolos gramaticais que não existem nas
+> regras sintáticas. Por exemplo, o que é rest2? Estou supondo que seja new-varlista2.
 
 ## Aluno:     Alysson Alexandre de Oliveira Araújo
 ## Matrícula: 474084
@@ -128,5 +131,7 @@ Coloquei o new-varlist2 após o *, id* na regra **new-varlista1 ->  , id new-var
 <br>
 <br>
 <br>
+
+> Correção: o que é rest2?
 
 **As duas últimas regras ocorrem sintetização**
