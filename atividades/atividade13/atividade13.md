@@ -1,6 +1,14 @@
 # Atividade13 da disciplina de Compiladores
 # Semestre 2021.1
 
+> Correção: 0,5
+> 
+> Eu sinceramente não entendi sua resposta. Na análise semântica, você associa a cada regra gramatical a ação semântica para ser executada.
+> Essa ação pode ser representada em código ou pseudocódigo. Neste caso:
+> 
+> bárvore1.val = (número1.val bárvore2.val bárvore3.val )
+> 
+> Qual a ação que será executada? Qual algoritmo executado?
 
 ## Aluno:     Alysson Alexandre de Oliveira Araújo
 ## Matrícula: 474084
@@ -45,6 +53,9 @@ Minha ideia é criar duas funções:
 
 A função _menorQueNode_ recebe dois parâmetros (o número1 e a número2) e retorna o número2 se o seu val for menor que o val do número1, no caso o número corrente. Se ele não retornar o número2, então a árvore em si está desbalanceada.
 
+>
+> Correção: não entendi os parâmetros. São dois números e retorna o menor? Então por que não usar o operador de desigualdade mesmo?
+>
 
 A função _maiorQueNode_ recebe dois parâmetros (o número1 e o número2) e retorna o número2 se  o seu val  for maior que o  val do número1, no caso o número corrente. Se ele não retornar o número2, então a árvore em si está desbalanceada.
 
@@ -58,9 +69,10 @@ Vamos construir a gramática de atributos da gramática mostrada no enunciado.
 ~~~~
 
 bárvore1.val = (número1.val bárvore2.val bárvore3.val )
-
+// Correção: se val é o valor, então qual será o valor que bárvore1.val recebe aqui? número1.val? bárvore2.val? bárvore3.val? 
 
 bárvore1.val = (número1.val  (menorQueNode(número1.val número2.val) bárvore2.val bárvore3.val ) maiorQueNode(número1.val número3.val) bárvore4.val bárvore5.val )
+// Correção: da mesma forma aqui. Está confuso. O atributo val, que corresponde a um valor, está recebendo uma cadeia de caracteres? Um nó da árvore?
 
 
 bárvore.val = nil
