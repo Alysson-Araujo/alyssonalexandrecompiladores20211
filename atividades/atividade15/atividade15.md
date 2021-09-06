@@ -1,6 +1,9 @@
 # Atividade15 da disciplina de Compiladores
 # Semestre 2021.1
-
+> Correção: 2,0
+> 
+> O problema da sua solução, que é comum em boa parte das atividades que estou corrigindo, é que você tem um atributo cujo tipo é mutante.
+> val às vezes é valor, às vezes é booleano. Daria para implementar como união nas linguanges de programação, mas do jeito que está apresentado, fica incompleto.
 
 ## Aluno:     Alysson Alexandre de Oliveira Araújo
 ## Matrícula: 474084
